@@ -1,15 +1,17 @@
 package ru.itpark;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class DepositServiceTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     void calculateDeposit() {
         DepositService depositService = new DepositService();
         int deposit = depositService.calculateDeposit(1_000_000, 10, 3);
 
-        assertEquals(1300000,deposit);
+        assertEquals(1_300_000,deposit);
 
     }
 }
